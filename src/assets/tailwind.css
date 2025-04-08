@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dashboard-todo-list {
+    @apply grid grid-cols-15 w-full h-full *:col-span-3
+}

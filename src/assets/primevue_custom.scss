@@ -1,0 +1,71 @@
+// 최근오류 데이터테이블 
+
+.custom_datatable {
+    .p-datatable {
+        border: none;
+    }
+    .p-datatable-thead {
+        border: none;
+    }
+    .p-datatable-header-cell {
+        border: none;
+        padding: 0;
+    }
+    .p-datatable-column-title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .p-datatable-tbody > tr > td {
+        border: none;
+        padding: 4px 0px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+   .p-datatable-tbody > tr > td:nth-child(1) {
+    width: 70px;
+   }
+
+   .p-datatable-tbody > tr > td:nth-child(2) , 
+   .p-datatable-tbody > tr > td:nth-child(3){
+    width: 120px;
+   }
+}
+
+
+.custom_select {
+
+    .p-select-label.p-placeholder {
+        font-size: 12px;
+        text-align: center;
+        line-height: 16px;
+    }
+    .p-select-label {
+        padding: 6px;
+    }
+
+   
+    .p-select-label {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+
+    }
+}
+
+.custom_overviewtable {
+ 
+    .p-datatable-header-cell{
+        background-color: rgba(243, 244, 246, 0.5);
+        padding: 10px 40px 10px 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .p-datatable-tbody > tr > td {
+        font-size: 12px;
+        padding: 5px 40px 5px 20px;
+        text-align: center;
+    }
+}
+
