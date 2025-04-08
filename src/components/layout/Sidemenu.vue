@@ -1,9 +1,13 @@
 <template>
    <ul class="h-screen bg-gray-50 w-[68px] pt-2 flex flex-col">
-    <li class="flex flex-col items-center w-full gap-1 h-[62px]">
-        <IconChart/>
-        <div class="text-[10px] text-indigo-600 font-bold">대시보드</div>
-    </li>
+   <div class="flex items-center pl-1">
+       <div class="w-[2px] h-[50px] rounded-lg bg-indigo-600"></div>
+       <li class="flex flex-col items-center w-full gap-1 h-[62px] justify-center">
+           <IconChart/>
+           <div class="text-[10px] text-indigo-600 font-bold">대시보드</div>
+       </li>
+
+   </div>
     <li class="flex flex-col items-center w-full gap-1 h-[62px]">
         <IconList/>
         <div class="text-[10px] text-gray-400">원장관리</div>

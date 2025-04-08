@@ -4,7 +4,7 @@
         <Sidemenu/>
 
         <main class="flex flex-col w-full h-screen overflow-y-auto bg-gray-100">
-          <header class="sticky top-0 z-10 flex items-center justify-between px-3 py-3 bg-white border-b border-gray-200 md:px-5">
+          <header class="top-0 z-10 flex items-center justify-between px-3 py-3 bg-white border-b border-gray-200 md:px-5">
               <div class="flex items-center gap-1">
                   
                       <Button severity="contrast" icon="pi pi-angle-left" plain text rounded></Button>
@@ -115,7 +115,7 @@
                                 </div>
                                 <div class="text-lg font-bold">활성 사용자</div>
                             </div>
-                            <div class="flex items-end justify-end gap-1 pt-3 w-[180px]">
+                            <div class="flex items-end justify-end gap-1 pt-3 ">
                                 <div class="text-[36px] font-semibold text-end">1364</div>
                                 <div class="text-[20px] font-bold">명</div>
                             </div>
@@ -127,7 +127,7 @@
                                 </div>
                                 <div class="text-lg font-bold">서버 상태</div>
                             </div>
-                            <div class="flex items-end justify-end gap-1 pt-3 w-[180px]">
+                            <div class="flex items-end justify-end gap-1 pt-3 ">
                                 <div class="text-[36px] font-semibold text-end">양호</div>
                             </div>
                         </div> <div class="col-span-3 p-5 border-r border-gray-200">
@@ -137,7 +137,7 @@
                                 </div>
                                 <div class="text-lg font-bold">평균 응답 시간</div>
                             </div>
-                            <div class="flex items-end justify-end gap-1 pt-3 w-[180px]">
+                            <div class="flex items-end justify-end gap-1 pt-3 ">
                                 <div class="text-[36px] font-semibold text-end">0.98</div>
                                 <div class="text-[20px] font-bold">초</div>
                             </div>
@@ -148,7 +148,7 @@
                                 </div>
                                 <div class="text-lg font-bold">API 성공률</div>
                             </div>
-                            <div class="flex items-end justify-end gap-1 pt-3 w-[180px]">
+                            <div class="flex items-end justify-end gap-1 pt-3 ">
                                 <div class="text-[36px] font-semibold text-end">98</div>
                                 <div class="text-[20px] font-bold">%</div>
                             </div>
@@ -210,8 +210,8 @@
                     </div>
                 
                 </div> 
-                <div class="col-span-3 border-gray-200 border-1 rounded-[4px] bg-white dashboard_contents">
-                    <div class="flex justify-between gap-1 px-5 pt-3 pb-3 border-b border-gray-200 contents_title">
+                <div class="col-span-3 border-gray-200 border-1  pt-3 pb-3 rounded-[4px] bg-white dashboard_contents">
+                    <div class="flex justify-between gap-1 px-5 pb-3 border-b border-gray-200 contents_title">
                        <div class="flex gap-1 contents_title_text">
                             <div class="rounded-full flex justify-center items-center w-[24px] h-[24px] bg-green-50">
                                 <IconOver/>
@@ -245,6 +245,43 @@
                         2025.04.07 (17:56:00) 기준
                        </div>
                     </div>
+
+                    <div class="px-5 pt-3 pb-3">
+                        <ul class="flex flex-col gap-3 pt-3 pb-3">
+                            <li class="flex gap-3 custom_button">
+                                <Button label="진행중" severity="ing" ></Button>
+                                <div class="text-gray-900">
+                                    문의합니다 문의합니다 문의합니다 문의합니다
+                                    <div class="text-sm text-gray-600">aa@aa.com (공장명) | 2025. 04. 08 17:00</div>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 custom_button">
+                                <Button label="답변대기중" severity="ing" ></Button>
+                                <div class="text-gray-900">
+                                    문의합니다 문의합니다 문의합니다 문의합니다
+                                    <div class="text-sm text-gray-600">aa@aa.com (공장명) | 2025. 04. 08 17:00</div>
+                                </div>
+                            </li> <li class="flex gap-3 custom_button">
+                                <Button label="완료됨" severity="ing" ></Button>
+                                <div class="text-gray-900">
+                                    문의합니다 문의합니다 문의합니다 문의합니다
+                                    <div class="text-sm text-gray-600">aa@aa.com (공장명) | 2025. 04. 08 17:00</div>
+                                </div>
+                            </li> <li class="flex gap-3 custom_button">
+                                <Button label="진행중" severity="ing" ></Button>
+                                <div class="text-gray-900">
+                                    문의합니다 문의합니다 문의합니다 문의합니다
+                                    <div class="text-sm text-gray-600">aa@aa.com (공장명) | 2025. 04. 08 17:00</div>
+                                </div>
+                            </li> <li class="flex gap-3 custom_button">
+                                <Button label="진행중" severity="ing" ></Button>
+                                <div class="text-gray-900">
+                                    문의합니다 문의합니다 문의합니다 문의합니다
+                                    <div class="text-sm text-gray-600">aa@aa.com (공장명) | 2025. 04. 08 17:00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                    
                 </div> 
                 <div class="col-span-3 border-gray-200 border-1 rounded-[4px] bg-white dashboard_contents">
@@ -260,7 +297,9 @@
                         2025.04.07 (17:56:00) 기준
                        </div>
                     </div>
-                   
+                    
+                    <NoticeTable/>
+                    
                 </div> 
 
             </div>
@@ -293,6 +332,7 @@ import IconNotice from '@/components/icons/IconNotice.vue';
 import Errortable from '@/views/include/errortable.vue';
 import Chart from '@/views/include/chart.vue';
 import OverviewTable from '@/views/include/OverviewTable.vue';
+import NoticeTable from '@/views/include/NoticeTable.vue';
 
 
 const datepickerOpen = ref();

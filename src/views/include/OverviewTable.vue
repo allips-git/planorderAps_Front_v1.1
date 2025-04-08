@@ -7,14 +7,14 @@
                     <span class="text-sm font-bold">최근 7일 합계</span>
                 </div>
             </template>
-            <Column field="날짜" header="날짜"></Column>
-            <Column field="공장가입수" header="공장가입수"></Column>
+            <Column field="날짜" header="날짜" footer="총합"></Column>
+            <Column field="공장가입수" header="공장가입수" ></Column>
             <Column field="매장가입" header="매장가입"></Column>
             <Column field="공장제휴요청" header="발생 플랫폼"></Column>
             <Column field="매장제휴요청" header="발생 플랫폼"></Column>
             <Column field="공장제휴요청" header="발생 플랫폼"></Column>
             <Column field="문의" header="발생 플랫폼"></Column>
-            <template #footer> In total there are {{ products ? products.length : 0 }} products. </template>
+           
         </DataTable>
     </div>
 </template>
@@ -35,6 +35,7 @@ const result = ref(
             매장제휴요청: "5건",
             플랜오더사용률: "5건",
             문의: "5건",
+            총합: "25건"
         },
         {
             날짜: "5.11",
@@ -44,6 +45,8 @@ const result = ref(
             매장제휴요청: "5건",
             플랜오더사용률: "5건",
             문의: "5건",
+            총합: "25건"
+
         } , {
             날짜: "5.11",
             공장가입수: "5건",
@@ -52,6 +55,8 @@ const result = ref(
             매장제휴요청: "5건",
             플랜오더사용률: "5건",
             문의: "5건",
+            총합: "25건"
+
         }  ,{
             날짜: "5.11",
             공장가입수: "5건",
@@ -60,6 +65,8 @@ const result = ref(
             매장제휴요청: "5건",
             플랜오더사용률: "5건",
             문의: "5건",
+            총합: "25건"
+
         } , {
             날짜: "5.11",
             공장가입수: "5건",
@@ -68,6 +75,8 @@ const result = ref(
             매장제휴요청: "5건",
             플랜오더사용률: "5건",
             문의: "5건",
+            총합: "25건"
+
         } , {
             날짜: "5.11",
             공장가입수: "5건",
@@ -76,6 +85,8 @@ const result = ref(
             매장제휴요청: "5건",
             플랜오더사용률: "5건",
             문의: "5건",
+            총합: "25건"
+
         } , {
             날짜: "5.11",
             공장가입수: "5건",
@@ -84,6 +95,8 @@ const result = ref(
             매장제휴요청: "5건",
             플랜오더사용률: "5건",
             문의: "5건",
+            총합: "25건"
+
         }
     ]
 );
