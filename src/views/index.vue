@@ -92,7 +92,7 @@
              </div>
             
             <!-- 시스템, 오류 -->
-            <div class="grid w-full grid-cols-6 gap-4 dashboard_section">
+            <div class="gap-4 dashboard_section">
                 <div class="col-span-3 border-gray-200 border-1 rounded-[4px] bg-white dashboard_contents">
                     <div class="flex justify-between gap-1 px-5 pt-3 pb-3 border-b border-gray-200 contents_title">
                        <div class="flex gap-1 contents_title_text">
@@ -181,7 +181,7 @@
             </div>
 
             <!-- 성과지표, 요약 -->
-            <div class="grid w-full grid-cols-6 gap-4 dashboard_section">
+            <div class="gap-4 dashboard_section">
                 <div class="col-span-3 border-gray-200 border-1 rounded-[4px] bg-white dashboard_contents">
                     <div class="flex justify-between gap-1 px-5 pt-3 pb-3 border-b border-gray-200 contents_title">
                        <div class="flex gap-1 contents_title_text">
@@ -230,7 +230,7 @@
             </div>
 
             <!-- 문의 현황, 공지 사항 -->
-            <div class="grid w-full grid-cols-6 gap-4 dashboard_section">
+            <div class="gap-4 dashboard_section">
                 <div class="col-span-3 border-gray-200 border-1 rounded-[4px] bg-white dashboard_contents">
                     <div class="flex justify-between gap-1 px-5 pt-3 pb-3 border-b border-gray-200 contents_title">
                        <div class="flex gap-1 contents_title_text">
@@ -249,32 +249,32 @@
                     <div class="px-5 pt-3 pb-3">
                         <ul class="flex flex-col gap-3 pt-3 pb-3">
                             <li class="flex gap-3 custom_button">
-                                <Button label="진행중" severity="ing" ></Button>
+                                <Button label="진행중" severity="ing" class="btn_progress"></Button>
                                 <div class="text-gray-900">
                                     문의합니다 문의합니다 문의합니다 문의합니다
                                     <div class="text-sm text-gray-600">aa@aa.com (공장명) | 2025. 04. 08 17:00</div>
                                 </div>
                             </li>
                             <li class="flex gap-3 custom_button">
-                                <Button label="답변대기중" severity="ing" ></Button>
+                                <Button label="답변대기중" severity="ing" class="btn_waiting"></Button>
                                 <div class="text-gray-900">
                                     문의합니다 문의합니다 문의합니다 문의합니다
                                     <div class="text-sm text-gray-600">aa@aa.com (공장명) | 2025. 04. 08 17:00</div>
                                 </div>
                             </li> <li class="flex gap-3 custom_button">
-                                <Button label="완료됨" severity="ing" ></Button>
+                                <Button label="완료됨" severity="ing" class="btn_complete"></Button>
                                 <div class="text-gray-900">
                                     문의합니다 문의합니다 문의합니다 문의합니다
                                     <div class="text-sm text-gray-600">aa@aa.com (공장명) | 2025. 04. 08 17:00</div>
                                 </div>
                             </li> <li class="flex gap-3 custom_button">
-                                <Button label="진행중" severity="ing" ></Button>
+                                <Button label="진행중" severity="ing" class="btn_progress"></Button>
                                 <div class="text-gray-900">
                                     문의합니다 문의합니다 문의합니다 문의합니다
                                     <div class="text-sm text-gray-600">aa@aa.com (공장명) | 2025. 04. 08 17:00</div>
                                 </div>
                             </li> <li class="flex gap-3 custom_button">
-                                <Button label="진행중" severity="ing" ></Button>
+                                <Button label="진행중" severity="ing" class="btn_progress"></Button>
                                 <div class="text-gray-900">
                                     문의합니다 문의합니다 문의합니다 문의합니다
                                     <div class="text-sm text-gray-600">aa@aa.com (공장명) | 2025. 04. 08 17:00</div>
@@ -341,17 +341,7 @@ const showDatePicker = (event) => {
     datepickerOpen.value.toggle(event);
 }
 
-const error = ref(
-    [
-        {
-           오류코드: "500",
-           발생플랫폼: "공장 시스템",
-           오류발생회원코드: "FA005",
-            세부사항: "외부 주문 500 에러 발생",
-            시간: "2025.04.08 14:00:00"
-        }
-    ]
-)
+
 
 const selectedCategory = ref();
 const category = ref([

@@ -1,7 +1,8 @@
 <template>
-    <div>고객</div>
+    <Topheader/>
+    
 </template>
 
 <script setup lang="ts">
-
+import Topheader from '@/components/layout/Topheader.vue';
 </script>
