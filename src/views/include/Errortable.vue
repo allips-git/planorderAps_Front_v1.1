@@ -12,7 +12,7 @@
 </template>
 
 <style>
-@import "@/assets/primevue_custom.scss"
+/* @import "@/assets/primevue_custom.scss" */
   
 
 </style>

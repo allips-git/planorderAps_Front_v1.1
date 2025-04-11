@@ -27,9 +27,9 @@ const router = createRouter({
 		},
 		{
 			/** 결제 관리 */
-			path: '/systeminfo',
-			name: 'SystemInfo',
-			component: SystemInfo
+			path: '/payinfo',
+			name: 'PayInfo',
+			component: Pay
 		}
 	],
 })

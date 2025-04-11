@@ -340,7 +340,7 @@
 
         <!-- <QuestionSet/> -->
         <!-- <QuestionCom/> -->
-        <ErrorSet/>
+        <!-- <ErrorSet/> -->
 
     </div>
 </template>
