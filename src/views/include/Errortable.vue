@@ -17,7 +17,7 @@
 
 </style>
 
-<script setup="ts">
+<script setup lang="ts">
 import { ref, onMounted } from 'vue';
 
 import DataTable from 'primevue/datatable';
